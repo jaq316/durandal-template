@@ -1,0 +1,25 @@
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#" name="top">BitCoin Stats</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <!-- ko foreach : router.visibleRoutes -->
+                    <li><a href="#" data-bind="css: { active: isActive }, attr: { href: hash }, text: name"></a></li>
+                    <li class="divider-vertical"></li>
+                    <!-- /ko -->
+                </ul>
+
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+    </div>
+    <!--/.navbar-inner -->
+</div>
+<!--/.navbar -->
